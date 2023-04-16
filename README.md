@@ -1,6 +1,6 @@
 # python-cv-ai-intro
 
-Small introduction to python, opencv and ai. See `docs/Anleitung.pdf` directory for a guide how to use this repository regarding BOGY 2023.
+Small introduction to python, opencv and ai. See `docs/Readme.md` directory for a guide how to use this repository regarding BOGY 2023.
 
 ## Setup
 
