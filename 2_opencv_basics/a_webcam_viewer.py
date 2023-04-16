@@ -40,3 +40,6 @@ while True:
     # add 1 to the image counter to count the image
     image_counter = image_counter + 1
 
+# deactivate camera and destroy windows (clean up)
+webcam.release()
+cv2.destroyAllWindows()
