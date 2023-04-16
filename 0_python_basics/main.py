@@ -1,0 +1,1 @@
+print("Willkommen beim BOGY Praktikum 2023 am Fraunhofer IPA!")
