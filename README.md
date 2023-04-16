@@ -4,7 +4,7 @@ Small introduction to python, opencv and ai. See `docs/Anleitung.pdf` directory 
 
 ## Setup
 
-1. Open a command prompt or terminal somewhere and clone this repository with `git clone https://github.com/tml444/python-cv-ai-intro.git`.
+1. Open a command prompt or terminal somewhere and clone this repository with `git clone https://github.com/tml444/python-cv-ai-intro.git`
 
 2. Create conda environment by running the following command:
 
