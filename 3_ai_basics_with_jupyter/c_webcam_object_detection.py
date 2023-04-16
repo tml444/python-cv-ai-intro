@@ -6,7 +6,8 @@ import mediapipe
 hand_detector = mediapipe.solutions.hands.Hands()
 
 # create a webcam object from webcam with id "0"
-webcam = cv2.VideoCapture(1)
+camera_id = 0
+webcam = cv2.VideoCapture(camera_id)
 
 # print some info how to control this program
 print("Press q to end this program.")
