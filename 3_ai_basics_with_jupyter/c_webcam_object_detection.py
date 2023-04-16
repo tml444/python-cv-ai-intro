@@ -32,8 +32,12 @@ while True:
     
     # detect hand using ai (with mediapipe library)
     image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-    result = hand_detector.process(image_rgb)
-    print(result)
+    results = hand_detector.process(image_rgb)
+    print(results.multi_hand_landmarks)
+    
+    if results.multi_hand_landmarks is not None:
+        for hand_landmarks in results.multi_hand_landmarks:
+            mediapipe.solutions.drawing_utils.draw_landmarks(image_rgb, hand_landmarks)
     
     # display the received image in a window
     cv2.imshow("My Webcam Window", image)
