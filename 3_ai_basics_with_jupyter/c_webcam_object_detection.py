@@ -6,7 +6,8 @@ import mediapipe
 hand_detector = mediapipe.solutions.hands.Hands()
 
 # create a webcam object from webcam with id "0"
-webcam = cv2.VideoCapture(1)
+camera_id = 0
+webcam = cv2.VideoCapture(camera_id)
 
 # print some info how to control this program
 print("Press q to end this program.")
@@ -44,7 +45,7 @@ while True:
     cv2.imshow("Hand detector", image_rgb)
     
     # wait indefinitely for a key press on the keyboard, if key is pressed, save the key that was pressed in "pressed_key" variable and continue
-    pressed_key = cv2.waitKey(0)
+    pressed_key = cv2.waitKey(1)
     
     # if the presed key was the q key, stop the loop
     if pressed_key == ord("q"):
@@ -53,3 +54,7 @@ while True:
     # add 1 to the image counter to count the image
     image_counter = image_counter + 1
 
+
+# deactivate camera and destroy windows (clean up)
+webcam.release()
+cv2.destroyAllWindows()

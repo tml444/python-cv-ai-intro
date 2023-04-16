@@ -26,3 +26,10 @@ Small introduction to python, opencv and ai. See `docs/Anleitung.pdf` directory 
 `code .`  
 
 6. After opening your first script (hello world in 1_python_basics), select the correct conda environment in the bottom right corner, select "cvintro".
+
+
+
+
+## Problem handling
+
+- webcam starts very slow under windows: export env variable -> OPENCV_VIDEOIO_MSMF_ENABLE_HW_TRANSFORMS=0, e.g. directly in script via ``os.environ["OPENCV_VIDEOIO_MSMF_ENABLE_HW_TRANSFORMS"]=0``
