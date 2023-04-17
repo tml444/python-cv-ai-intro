@@ -11,6 +11,7 @@ print(my_text)
 counter = 0
 while counter < 10:
     
+    # Note: everything that happens in the while loop has to be indented by 1 tab
     print(counter)
     counter = counter + 1
     
@@ -28,8 +29,15 @@ print("Type in Number B and press Enter:")
 b = input()
 b = float(b)
 
-# perform simple math
-product = a * b
+# perform simple math by creating a function with the keyword "def" that multiplies two values a and b
+def multiply(number_a, number_b):
+    
+    result = number_a * number_b
+    
+    return result
+
+# use the defined function by giving it the two variables a and b as input arguments
+product = multiply(a, b)
 
 print("The product of a and b is: ")
 print(product)
