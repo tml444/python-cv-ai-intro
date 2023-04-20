@@ -5,7 +5,7 @@ import cv2  # Install opencv-python
 import numpy as np
 
 model_dir_relative = "3_ai_basics_with_jupyter/model"
-camera_id = 1
+camera_id = 0
 
 # Disable scientific notation for clarity
 np.set_printoptions(suppress=True)
