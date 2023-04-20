@@ -2,6 +2,12 @@
 
 Small introduction to python, opencv and ai. See `docs` directory for a guide how to use this repository regarding BOGY 2023.
 
+## Prerequisites
+
+-	Visual Studio Code
+-	Anaconda
+-	Git
+
 ## Setup
 
 1. Open a command prompt or terminal somewhere and clone this repository with: 
@@ -27,8 +33,9 @@ Small introduction to python, opencv and ai. See `docs` directory for a guide ho
 
 6. After opening your first script (hello world in 1_python_basics), select the correct conda environment in the bottom right corner, select "cvintro".
 
+## Teachable machine: Playing with AI
 
-
+Try out the following link: https://teachablemachine.withgoogle.com/train 
 
 ## Problem handling
 
