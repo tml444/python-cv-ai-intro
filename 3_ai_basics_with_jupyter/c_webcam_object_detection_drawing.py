@@ -26,6 +26,9 @@ while True:
     # try to get an image from the webcam, if this try was successful, it will be saved in the variable "success"  and the image is saved in "image"
     success, image = webcam.read()
     
+    # flip image so it is correctly shown, like in a mirror
+    image = cv2.flip(image, 1)
+    
     if canvas_image is None:
         canvas_image = np.zeros_like(image)
     
@@ -51,6 +54,7 @@ while True:
             finger_zero_x = int(hand_landmarks.landmark[8].x * canvas_image.shape[1])
             finger_zero_y = int(hand_landmarks.landmark[8].y * canvas_image.shape[0])
             
+            image_rgb = cv2.drawMarker(image_rgb, (finger_zero_x, finger_zero_y), (0,255,0), cv2.MARKER_STAR, 15, 2)
             canvas_image = cv2.drawMarker(canvas_image, (finger_zero_x, finger_zero_y), (0,255,0), cv2.MARKER_DIAMOND, 3, 2)
     
     # display the received image in a window
