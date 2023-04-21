@@ -11,7 +11,7 @@ camera_id = 0
 np.set_printoptions(suppress=True)
 
 # Load the model
-model = tf.keras.models.load_model(model_dir_relative + "/keras_Model.h5", compile=False)
+model = tf.keras.models.load_model(model_dir_relative + "/keras_model.h5", compile=False)
 
 # Load the labels
 class_names = open(model_dir_relative + "/labels.txt", "r").readlines()
