@@ -1,7 +1,7 @@
 _Hint: scroll down for english version_
 
 # Python-cv-ai-Einführung (de)
-Kleine Einführung in Python, OpenCV und KI. Siehe `docs` Verzeichnis für eine Anleitung zur Nutzung dieses Repositorys bezüglich BOGY 2025.
+Kleine Einführung in Python, OpenCV und KI.
 
 ## Voraussetzungen
 - Visual Studio Code
@@ -29,7 +29,7 @@ Versuchen Sie den folgenden Link aus: https://teachablemachine.withgoogle.com/tr
 - Die Webcam startet unter Windows sehr langsam: Exportieren Sie die Umgebungsvariable -> OPENCV_VIDEOIO_MSMF_ENABLE_HW_TRANSFORMS=0, z.B. direkt im Skript über ``os.environ["OPENCV_VIDEOIO_MSMF_ENABLE_HW_TRANSFORMS"]=0``
 
 # Python-cv-ai-intro (en)
-Small introduction to python, opencv and ai. See `docs` directory for a guide how to use this repository regarding BOGY 2025.
+Small introduction to python, opencv and ai.
 
 ## Prerequisites
 -	Visual Studio Code
