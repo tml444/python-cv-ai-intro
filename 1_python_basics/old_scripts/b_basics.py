@@ -22,7 +22,7 @@ print("Counter state: ", counter)
 print("Type in Number A and press Enter:")
 
 a = input() # this waits for the user to type in some string and press enter, then saves the string to the variable a
-a = float(a) # we have to convert the string a to the datatype float to calculate with it
+a = float(a) # we cannot calculate with a string, so 'a' must be converted to the data type float (a decimal number)
 
 print("Type in Number B and press Enter:")
 
